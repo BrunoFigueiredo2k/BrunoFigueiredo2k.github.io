@@ -1,0 +1,848 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+::selection {
+    color: white;
+    background-color: #ffc905;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    padding: 70px 0;
+    margin: 0 auto;
+}
+
+/* Header section css */
+header {
+    z-index: 9999;
+    height: 10vh;
+    background-color: #111;
+    width: 100%;
+}
+
+.header-container {
+    height: 10vh;
+    width: 76%;
+    margin: 0 auto;
+}
+
+.content-header {
+    display: block;
+    line-height: 10vh;
+    width: 100%;
+}
+
+.menu-logo {
+    font-size: 40px;
+    color: #ffc905;
+    float: left;
+}
+
+.menu-logo:hover {
+    cursor: pointer;
+}
+
+.menu-list li {
+    list-style: none;
+    color: white;
+    float: right;
+    padding: 5px;
+    letter-spacing: 1px;
+    margin-right: 15px;
+    font-weight: 700;
+}
+
+.menu-list li:hover {
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    float: right;
+}
+
+.hamburger-menu span {
+    color: white;
+    transform: scale(1.6);
+}
+
+.hamburger-menu span:hover {
+    cursor: pointer;
+}
+
+/* ------- MAIN PAGE CSS ------- */
+/* Home section css */
+.section-home {
+    height: 100vh;
+    background: url("img/beard-slider1.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.title-home,
+.subtitle-home {
+    padding: 0;
+}
+
+.title-home {
+    font-size: 70px;
+}
+
+.subtitle-home {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+}
+
+.wrapper {
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.18);
+}
+
+.title-section {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 750;
+    padding-bottom: 30px;
+}
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 40px;
+}
+
+/* Info section css */
+.section-info {
+    height: 100%;
+}
+
+.section-info img {
+    height: 50%;
+    width: 300px;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(112, 117, 121, 1);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(112, 117, 121, 1);
+    box-shadow: 3px 3px 10px 0px rgba(112, 117, 121, 1);
+}
+
+.section-info p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    padding: 20px 13% 0 13%;
+    color: #707579;
+}
+
+/* Service section css */
+.section-service {
+    background-color: #f8f7f7;
+    height: 100%;
+}
+
+.row.service-big,
+.row.service-small {
+    margin-bottom: 20px;
+}
+
+.service-block-bg,
+.service-block-sm {
+    margin: 15px 0;
+    padding: 0 15px 0 15px;
+}
+
+.service-block-bg .content-inner,
+.service-block-sm .content-inner {
+    background-color: white;
+    padding: 20px;
+}
+
+.service-block-bg .content-inner {
+    height: 640px;
+}
+
+.img-fluid {
+    padding-bottom: 10px;
+    max-height: 86%;
+    max-width: 100%;
+}
+
+.service-description {
+    font-size: 18px;
+    font-weight: 570;
+}
+
+.circle-right-btn {
+    font-size: 18px;
+    color: #ffc905;
+}
+
+.circle-right-btn:hover {
+    cursor: pointer;
+}
+
+/* Pricing section css */
+.section-pricing {
+    height: 100%;
+}
+
+.card-menu {
+    padding: 10px 15px 10px 15px;
+}
+
+.padding {
+    background-color: #ffffff;
+    border: 6px solid #f1f1f1;
+    padding: 32px;
+    color: #555;
+}
+
+.padding h3 {
+    color: #ffc905;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row.border-dot {
+    padding-top: 27px;
+    border-bottom: 2px dotted #555;
+}
+
+.menu-item-price {
+    text-align: right;
+}
+
+/* Appointment section css */
+.section-appointment {
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.section-appointment .container {
+    padding: 10vh 0;
+}
+
+.appointment-number {
+    letter-spacing: 8px;
+    font-size: 70px;
+}
+
+.appointment-msg1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.appointment-msg2 {
+    color: #ffc905;
+    font-size: 30px;
+}
+
+/* Reviews section css */
+.section-reviews {
+    height: 100%;
+    background-color: rgb(233, 250, 246);
+}
+
+.container.reviews {
+    height: 70%;
+}
+
+.review p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    color: #707579;
+}
+
+.review-img {
+    border-radius: 50%;
+    height: 53px;
+    width: 53px;
+    background: rgba(30, 39, 46, 0.35);
+    margin-top: 1em;
+    padding: 4px;
+}
+
+.ul-reviews {
+    list-style: none;
+    padding: 10px 0 0 0;
+}
+
+.ul-reviews li {
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.ul-reviews a {
+    text-decoration: none;
+    transform: scale(1.18);
+    color: #2d3436;
+}
+
+.ul-reviews a:hover {
+    color: #707579;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.newsletter {
+    background-color: #ffc905;
+    color: white;
+    padding: 30px 0;
+    height: 30%;
+    margin-top: 30px;
+}
+
+.newsletter i {
+    font-size: 100px;
+}
+
+.newsletter h1 {
+    text-transform: capitalize;
+}
+
+.newsletter a {
+    color: white;
+    font-size: 18px;
+}
+
+/* Footer content css */
+.footer-content {
+    height: 100%;
+    background: url("img/footer-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.footer-content .wrapper {
+    background-color: rgba(17, 17, 17, 0.6);
+}
+
+.footer-content .container-fluid {
+    padding: 75px 40px 50px 40px;
+}
+
+.footer-content-inner {
+    padding: 0 20px;
+}
+
+.footer-content-inner h2 {
+    font-size: 45px;
+    color: #ffc905;
+    text-transform: uppercase;
+}
+
+.footer-content-inner h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    text-transform: uppercase;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    letter-spacing: 2px;
+}
+
+.footer-content-inner p,
+.row.footer-bottom p {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 2px;
+}
+
+.row.footer-bottom {
+    padding-top: 50px;
+}
+
+.row.footer-bottom p {
+    font-size: 17px;
+}
+
+.list-unstyled-media {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.list-unstyled-media li:hover {
+    cursor: pointer;
+}
+
+.list-unstyled-media li {
+    display: inline-block;
+    margin: 0 15px;
+    transform: scale(1.2);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Dropdown Content (Hidden by Default) FOR HAMBURGER MENU */
+.hamburger-menu .dropdown-content {
+    display: none;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    background-color: #f7f5f5;
+    margin-left: -400%;
+    margin-top: -28px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #2d3436;
+    height: 50px;
+    padding: 0 16px;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ---- Media queries for responsive ---- */
+@media (max-width: 992px) {
+    .home-text-banner {
+        padding: 8% 0 4% 0;
+        text-align: center;
+    }
+
+    .footer-content .wrapper {
+        padding: 30px 0;
+    }
+
+    .footer-content h4 {
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 1027px) {
+    .home-text-banner {
+        padding: 8vw 140px 0 140px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu-list {
+        display: none;
+        transition: ease-out 500ms;
+    }
+
+    .title-home {
+        font-size: 60px;
+        margin-top: 70px;
+    }
+
+    .hamburger-menu {
+        display: inline;
+        transition: ease-in 500ms;
+    }
+
+    header {
+        position: fixed;
+        height: 10vh;
+        background-color: #111;
+        width: 100%;
+    }
+
+}
+
+/* ------- CONTACT PAGE CSS ------- */
+
+/* Section image */
+.section-image {
+    background: url("img/beard-slider1.jpg");
+    background-size: cover;
+    background-position-y: 10%;
+    height: 30vh;
+}
+
+.contact-navbar {
+    padding: 12px 30px;
+    height: 7vh;
+    text-decoration: none;
+    background-color: rgb(228, 228, 228);
+}
+
+.contact-navbar li {
+    font-size: 16px;
+    list-style: none;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.home-li:hover {
+    cursor: pointer;
+}
+
+/* Section contact */
+.description-contact {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    padding: 0 20%;
+    color: #707579;
+}
+
+.contact-form {
+    padding: 10px 80px;
+}
+
+@media(max-width:770px) {
+    .contact-form {
+        padding: 10px 10px;
+    }
+
+    .about-beard.row {
+        margin: 50px 0;
+    }
+
+    .about-beard.row h4 {
+        margin-top: 20px;
+    }
+
+    .section-about .title-section {
+        padding: 0;
+    }
+
+    .description-contact {
+        padding: 0;
+    }
+
+    .newsletter .row {
+        padding: 0 30px;
+    }
+
+}
+
+.box-right,
+.box-left {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+}
+
+.box-right p,
+.box-left p {
+    color: #555;
+    margin: 10px 0 6px 0;
+    height: 100%;
+}
+
+.box-left input {
+    height: 50px;
+    background-color: #f1f1f1;
+}
+
+.box-left input:focus,
+.box-right input:focus {
+    transition: 400ms;
+}
+
+.box-right textarea {
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+}
+
+/* Section map */
+.section-map {
+    background-color: rgb(228, 228, 228);
+    height: 40vh;
+    width: 100%;
+    padding: 10px;
+}
+
+/* ------- ABOUT US PAGE CSS ------- */
+
+/* About section */
+.section-about .container {
+    height: 100%;
+}
+
+.about-beard.row {
+    margin: 70px 0;
+}
+
+.img-about-us {
+    width: 100%;
+    height: 100%;
+}
+
+.about-beard.row h4 {
+    color: #ffc905;
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 450;
+}
+
+.about-beard.row h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.about-beard.row p {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 17px;
+    line-height: 33px;
+    color: grey;
+}
+
+/* Achievements section */
+.section-achievements {
+    background: url("img/achievements-bg-img.jpg");
+    background-position: 60% 78%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.section-achievements .wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-achievements .row {
+    padding: 30px 0;
+}
+
+.section-achievements h2 {
+    color: #ffc905;
+    font-size: 40px;
+}
+
+.section-achievements h4 {
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* Section team about */
+.section-team p {
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section-team .row {
+    padding-bottom: 40px;
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    -webkit-box-shadow: 1px 1px 13px 0px rgb(153, 153, 153);
+    -moz-box-shadow: 1px 1px 13px 0px rgb(153, 153, 153);
+    box-shadow: 1px 1px 13px 0px rgb(153, 153, 153);
+}
+
+/* ------- GALLERY PAGE CSS ------- */
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px;
+}
+
+.gallery-img:hover {
+    cursor: pointer;
+}
+
+.section-carousel {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+/* Image view pop up */
+/* Style the Image Used to Trigger the Modal */
+#gallery-img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#gallery-img:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100vh;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* ------- INFO SHOP PAGE CSS ------- */
+.shop-info-description {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    color: #707579;
+}
+
+/* Section info icons */
+.section-info-icons {
+    height: 100%;
+    background-color: rgb(228, 228, 228);
+}
+
+.section-info-icons .card {
+    background-color: rgb(228, 228, 228);
+    margin: 20px 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.card-content {
+    background-color: rgba(255, 255, 255, 0.829);
+}
+
+.card-content p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    padding: 2px 20px 10px 20px;
+    line-height: 1.8em;
+    color: #707579;
+}
+
+.card-content h3 {
+    color: #555;
+}
+
+.card-content span {
+    transform: scale(3.5);
+    margin-bottom: 30px;
+    color: #555
+}

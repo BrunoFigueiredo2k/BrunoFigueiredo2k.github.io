@@ -1,0 +1,656 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    background-color: #2c2f33;
+    padding-left: 200px;
+    color: white;
+    padding-bottom: 1px;
+    margin-bottom: -1px;
+}
+
+.section-content {
+    padding: 50px 20px 50px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.section-content a {
+    color: #facb8e;
+}
+
+h1,
+p {
+    color: white;
+    margin: 0;
+}
+
+.p {
+    line-height: 1.7em;
+    color: #ececec;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    transition: 200ms ease-in;
+}
+
+.sidebar-nav-menu {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    background-color: #1a1a1a;
+}
+
+.sidebar-nav-menu ul,
+.sidenav ul {
+    font-size: 16px;
+    line-height: 3.7em;
+}
+
+.sidebar-nav-menu .icon-nav,
+.sidenav .icon-nav {
+    color: #fad4a2;
+    width: 70px;
+    font-size: 21px;
+    padding-left: 20px;
+    border-left: 4px solid transparent;
+}
+
+.sidebar-nav-menu a,
+.sidenav a {
+    width: 100%;
+    display: block;
+    color: #ececec;
+    transition: 400ms smooth;
+}
+
+.sidebar-nav-menu li:hover,
+.sidenav li:hover {
+    background-color: #333232;
+    cursor: pointer;
+    border-left: 4px solid #fad4a2;
+}
+
+.logo {
+    padding: 25px;
+    box-sizing: content-box;
+}
+
+.author-title {
+    font-size: 26px;
+    line-height: 1.5em;
+    font-weight: 300;
+    color: #fad4a2;
+    padding-bottom: 0;
+}
+
+.author-sub {
+    width: 100%;
+    margin-top: 5px;
+    color: #ececec;
+}
+
+.ul-socials {
+    list-style: none;
+    padding: 0 0 10vh 0;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.ul-socials li {
+    display: inline-block;
+    transform: scale(1.8);
+}
+
+.ul-socials a {
+    color: #facb8e;
+    margin: 0 15px 20px 15px;
+    text-decoration: none;
+    transition-duration: 200ms;
+}
+
+.ul-socials a:hover {
+    margin-top: -10px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: black !important;
+    font-weight: 700;
+    display: inline-block;
+    transition: 250ms;
+    background-color: #fad4a2;
+    border-bottom: 4px solid #eeac55;
+}
+
+.cta-btn:hover {
+    cursor: pointer;
+    background-color: #facb8e;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.726);
+}
+
+#home-section {
+    height: 100vh;
+}
+
+.self-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 100px 0 20px;
+    border: 3px solid #facb8e;
+    box-shadow: 0 0 5px 6px rgba(0, 0, 0, 0.144);
+}
+
+.home-title {
+    font-size: 42px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px 7px rgba(0, 0, 0, 0.199);
+}
+
+.home-msg {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.home-msg:after {
+    content: " ";
+    border-bottom: 1px solid;
+    padding-top: 20px;
+    display: table-cell;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.title-section {
+    width: 100%;
+    padding: 30px 0;
+    color: #facb8e;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #1a1a1a;
+    padding-left: 20px;
+}
+
+.quote-me {
+    border-left: 6px solid #facb8e;
+    font-size: 38px;
+    color: #facb8e;
+    padding-left: 25px;
+    margin: 10px 0 40px 0;
+}
+
+.quote-me h1 {
+    color: #fad4a2;
+    line-height: 1.4em;
+}
+
+.head-card {
+    line-height: 50px;
+}
+
+.name-company {
+    font-size: 24px;
+}
+
+.card {
+    height: 100%;
+    margin-top: 40px;
+    background-color: #141414;
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+}
+
+.projects .card {
+    height: 390px;
+}
+
+.card-job {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #141414;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.company {
+    padding: 0 20px;
+}
+
+.name-company {
+    font-weight: 600;
+    color: white !important;
+}
+
+.function-company {
+    float: right !important;
+    font-size: 16px;
+    color: white;
+    padding-right: 20px;
+    background-color: #333232;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2px;
+}
+
+.p-card {
+    line-height: 1.7em;
+    color: #ececec;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.company-activities {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 17px;
+    color: #fad4a2;
+    margin-bottom: 15px;
+}
+
+.used-tech li,
+.skills li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 33px;
+}
+
+.used-tech img {
+    width: 35px;
+    height: 35px;
+}
+
+.projects {
+    padding: 0 20px;
+    position: relative;
+}
+
+.project-img img {
+    width: 100%;
+    padding: 0;
+}
+
+.project-title {
+    font-size: 20px;
+    color: #facb8e;
+    padding-bottom: 5px;
+}
+
+.project-body {
+    padding: 20px;
+}
+
+.project-info {
+    float: right;
+}
+
+.project-title:hover,
+.project-img:hover {
+    cursor: pointer;
+}
+
+.card-reveal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    margin: 0 20px;
+    height: 0;
+    transition: .5s ease;
+}
+
+.card-reveal-top {
+    padding: 20px;
+}
+
+.card-reveal-bottom {
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+}
+
+.reveal-p {
+    font-weight: 550;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: #141414;
+    margin-bottom: 15px;
+}
+
+.close {
+    color: #141414 !important;
+    opacity: 1;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+}
+
+.action-project-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    margin-right: 10px;
+    text-align: center;
+    text-shadow: 0 0 5px 10px black;
+    background-color: #141414;
+    color: white !important;
+    font-size: 20px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.164);
+}
+
+.action-project-link i {
+    text-align: center;
+    transform: scale(1.5);
+    z-index: 999;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #757474;
+}
+
+.active-nav {
+    background-color: #333232;
+    border-left: 4px solid #fad4a2;
+}
+
+.skills {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.skills li {
+    text-align: center !important;
+    margin-right: 60px;
+}
+
+.skills i {
+    transform: scale(1.7);
+}
+
+.skill-icon {
+    color: #facb8e;
+    margin-right: 20px;
+    font-size: 22px;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.skills-label {
+    font-size: 16px;
+    color: #ececec;
+}
+
+.skills img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-links {
+    list-style: none;
+    text-decoration: none;
+}
+
+.contact-links li {
+    font-size: 24px;
+    margin-top: 35px;
+}
+
+.contact-links i {
+    background-color: #141414;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#contact-section {
+    min-height: 101vh;
+    height: 101vh;
+}
+
+.sidenav,
+#hamburger-mobile {
+    display: none;
+}
+
+#hamburger-mobile {
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 99999;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.151);
+    background-color: #303438;
+    transition: 200ms ease;
+}
+
+#hamburger-mobile .material-icons {
+    font-size: 26px;
+    line-height: 50px;
+}
+
+#hamburger-mobile:hover,
+.sidenav .closebtn:hover {
+    background-color: #41474d;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav ul {
+    margin-top: 13vh;
+    list-style-type: none;
+}
+
+.sidenav a {
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 50px;
+    text-align: right;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.151);
+    background-color: #303438;
+    transition: 200ms ease;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media(max-width: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .card-job {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .p,
+    .name-company {
+        font-size: 20px !important;
+    }
+
+    .quote-me {
+        font-size: 26px !important;
+    }
+
+    .function-company {
+        font-size: 14px;
+        padding: 0;
+        margin-top: 10px;
+        float: none;
+    }
+
+    .skills li {
+        margin-right: 30px;
+    }
+
+    .skills i {
+        transform: scale(1.3);
+    }
+
+    .skills-label {
+        font-size: 13px;
+    }
+
+    .skill-icon {
+        margin-right: 10px;
+    }
+
+    .contact-links li {
+        font-size: 16px;
+    }
+
+    .contact-links i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    .self-img {
+        margin: 10vh 0 20px;
+    }
+
+    .name-company {
+        font-size: 19px !important;
+    }
+
+    .skills li {
+        margin-bottom: 15px;
+    }
+
+    .section-content {
+        padding: 40px 10px;
+    }
+
+}
+
+@media(max-width: 1199px) {
+
+    .sidenav,
+    #hamburger-mobile {
+        display: inline-block;
+    }
+
+    .sidebar-nav-menu {
+        display: none;
+    }
+
+    section {
+        padding-left: 0;
+    }
+
+    .projects .card {
+        height: 100%;
+    }
+
+    .sidenav a {
+        font-size: 21px;
+        line-height: 2.9em;
+    }
+
+    #contact-section,
+    #home-section {
+        height: 100%;
+        min-height: 101vh;
+    }
+}
+
+.link {
+    border-bottom: 1.2px solid transparent;
+    padding-bottom: 4px;
+    transition: 100ms ease-in;
+}
+
+.link:hover {
+    border-bottom: 1.2px solid #facb8e;
+}

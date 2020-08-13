@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Importing icons from fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <!-- Importing fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- Importing bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- seo stuff -->
+    <link rel=”canonical” href=”http://bruno-figueiredo.nl/” />
+    <link rel=”canonical” href=”http://www.bruno-figueiredo.nl/” />
+    <title>Bruno Figueiredo - Web Developer</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <meta name="author" content="Bruno Figueiredo">
+    <meta name="keywords" content="Bruno Figueiredo portfolio">
+    <meta name="description"
+        content="Hi there! I'm Bruno Figueiredo, a Business IT & Management student at the Hogeschool van Amsterdam. Aside from my studies I'm a front-end developer.">
+</head>
+
+
+<body>
+
+    <!-- Mobile hamburger menu -->
+    <div class="navbar-mobile">
+        <div class="text-center" style="width: 100%;" id="icons">
+            <label for="toggle" id="hamburger-menu">&#9776;</label>
+            <label for="toggle" id="close-menu">+</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                <a href="#section-home">
+                    <li class="list-page" id="nav-home-mobile">Home</li>
+                </a>
+                <a href="#section-about">
+                    <li class="list-page" id="nav-about-mobile">About</li>
+                </a>
+                <a href="#section-projects">
+                    <li class="list-page" id="nav-projects-mobile">Projects</li>
+                </a>
+                <a href="#section-contact">
+                    <li class="list-page" id="nav-contact-mobile">Contact</li>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar div on leftside of screen responsive -->
+    <div class="navbar">
+        <div class="container text-center">
+            <div class="author-img">
+                <img src="img/self.jpg" alt="Bruno Figueiredo" alt="Bruno Figueiredo" class="nav-img col-12">
+            </div>
+            <h3 class="author-name text-center col-12">Bruno Figueiredo</h3>
+            <p class="nav-sub col-12"> <span>Front-end Developer</span> in the Netherlands</p>
+            <ul class="ul-navbar col-12">
+                <li id="nav-home"><a href="#section-home">Home</a></li>
+                <li id="nav-about"><a href="#section-about">About</a></li>
+                <li id="nav-projects"><a href="#section-projects">Projects</a></li>
+                <li id="nav-contact"><a href="#section-contact">Contact</a></li>
+            </ul>
+            <p class="nav-copyright">© Copyright 2020 All rights reserved | Bruno Monteiro Figueiredo</p>
+            <ul class="ul-socials">
+                <li> <a href="https://www.linkedin.com/in/bruno-figueiredo-953906177/" class="fab fa-linkedin"
+                        target="_blank" rel=”noreferrer”></a> </li>
+                <li> <a href="https://github.com/BrunoFigueiredo2k" class="fab fa-github" rel=”noreferrer”
+                        target="_blank"></a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Home section -->
+    <section class="section-home" id="section-home">
+        <div class="wrapper">
+            <div class="content-home" data-aos="fade-down" data-aos-duration="800">
+                <h1>Hi! <br>I'm Bruno</h1>
+                <p>Front-end developer and student</p>
+                <form method="get" action="files/bruno-figueiredoCV.pdf" target="_blank" rel=”noreferrer”>
+                    <button type="submit">Download CV <span class="fas fa-download"></span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="section-about" id="section-about">
+        <div class="container">
+            <h1 class="title-section" style="padding-bottom: 0;">About Me</h1>
+            <div class="row" style="padding-bottom: 30px;">
+                <div class="about-me text-left col-lg-7">
+                    <h2 class="about-title">Who am i?</h2>
+                    <p><b>Hi, I'm Bruno Figueiredo </b>a Business IT & Management student at the Hogeschool van
+                        Amsterdam. During my study I developed an interest for creating (web) applications. Aside from
+                        creating (web) applications I also like the aspect of improving business processes, which is
+                        much more related to the study I'm currently doing. In my
+                        spare time I like to:
+                    <ul>
+                        <li>Play badminton</li>
+                        <li>Watch football</li>
+                        <li>Play videogames</li>
+                        <li>Watch anime and movies</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="about-me-skills col-lg-5">
+                    <h2 class="about-title">Skills IT</h2>
+                    <h4 class="text-center">Coding</h4>
+                    <ul class="ul-sk text-center">
+                        <li><span class="fab fa-html5 fa-3x"></span><br>HTML</li>
+                        <li><span class="fab fa-css3-alt fa-3x"></span><br>CSS</li>
+                        <li><span class="fab fa-js fa-3x"></span><br>JS</li>
+                        <li><span class="fab fa-java fa-3x"></span><br>Java</li>
+                        <li><span class="fab fa-python fa-3x"></span><br>Python</li>
+                        <li><img alt="SQL icon" src="img/skills/sql.svg" alt=""><br>SQL</li>
+                    </ul>
+                    <h4 class="text-center" style="padding-top: 20px;">Other technologies</h4>
+                    <ul class="ul-sk text-center">
+                        <li><img src="img/skills/bootstrap.svg" alt="Bootstrap icon"><br>Bootstrap</li>
+                        <li><img src="img/skills/jquery.svg" alt="jQuery icon"><br>jQuery</li>
+                        <li><img src="img/skills/WordPress.png" alt="Wordpress icon"><br>Wordpress</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="about-title">Important to me</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="important-work">
+                        <img src="img/about-important/about-mobile.svg" class="important-img img-fluid"
+                            alt="Mobile icon">
+                        <h2>Responsive / Mobile friendly</h2>
+                        <p>Responsive and mobile friendly websites are very important nowadays. That's why I always make
+                            sure all the websites I create are mobile friendly and responsive.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="important-work">
+                        <img src="img/about-important/about-ux.svg" class="important-img img-fluid" alt="UX design">
+                        <h2>UI & UX</h2>
+                        <p>Another thing I find very important in creating websites is making sure I'm creating
+                            something that will not only benefit the business, but will also bring a positive experience
+                            to the users.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="important-work">
+                        <img src="img/about-important/performance.png" class="important-img img-fluid"
+                            alt="Performance icon">
+                        <h2>Performance</h2>
+                        <p>A fast website is something everybody likes and something I personally find very important in
+                            a modern webpage. That's why I always aim to improve the
+                            performance of any of my projects.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="about-title">How I like to work</h2>
+            <div class="row">
+                <div class="about-work card col-lg-2 text-center">
+                    <div class="work-content">
+                        <p>1 - Plan</p>
+                        <img src="img/about-work/mockup.svg" alt="Mockup icon">
+                    </div>
+                </div>
+                <div class="about-work card col-lg-2 text-center">
+                    <div class="work-content">
+                        <p>2 - Build</p>
+                        <img src="img/about-work/build.svg" alt="Build icon">
+                    </div>
+                </div>
+                <div class="about-work card col-lg-2 text-center">
+                    <div class="work-content">
+                        <p>3 - Test</p>
+                        <img src="img/about-work/test.svg" alt="Test icon">
+                    </div>
+                </div>
+                <div class="about-work card col-lg-2 text-center">
+                    <div class="work-content">
+                        <p>4 - Fix</p>
+                        <img src="img/about-work/improve.svg" alt="Improve icon">
+                    </div>
+                </div>
+                <div class="about-work card col-lg-2 text-center">
+                    <div class="work-content">
+                        <p>5 - Deploy</p>
+                        <img src="img/about-work/deploy.svg" alt="Deploy icon">
+                    </div>
+                </div>
+                <div class="about-work card col-lg-2 text-center">
+                    <div class="work-content">
+                        <p>6 - Reflect</p>
+                        <img src="img/about-work/learn.svg" alt="Learn icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facts section -->
+    <section class="section-facts" id="section-facts">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row text-center" style="height: 100%;" data-aos="fade-down" data-aos-duration="800">
+                    <div class="col-lg-3">
+                        <h1>20</h1>
+                        <p>Years old</p>
+                    </div>
+                    <div class=" col-lg-3">
+                        <h1>4</h1>
+                        <p>Languages</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h1>6</h1>
+                        <p>Projects</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h1>1<span style="font-size: 22px; margin-left: 5px; position: absolute; top: 25px;">+</span>
+                        </h1>
+                        <p>Years experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="section-projects" id="section-projects">
+        <div class="container">
+            <h1 class="title-section">My Projects</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-project" style="background-image: url('img/projects/project-tsb.jpg');">
+                        <div class="hover-content">
+                            <h3 class="title-project">The Student Broker</h3>
+                            <p>The Student Broker helps international students find housing in the Netherlands.</p>
+                            <ul class="ul-project">
+                                <li><a href="https://thestudentbroker.com/" target="_blank" rel=”noreferrer”
+                                        class="project-btn">View
+                                        website</a>
+                                </li>
+                                <li>
+                                    <a href="pages/project-tsb.html" class="fas fa-info-circle fa-lg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-project" style="background-image: url('img/projects/project1.jpg');">
+                        <div class="hover-content">
+                            <h3 class="title-project">Men Spa</h3>
+                            <p>A male barbershop website.</p>
+                            <ul class="ul-project">
+                                <li><a href="Men Spa/index.html" target="_blank" class="project-btn">View website</a>
+                                </li>
+                                <li>
+                                    <a href="pages/project-barber.html" class="fas fa-info-circle fa-lg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-project" style="background-image: url('img/projects/project6.jpg');">
+                        <div class="hover-content">
+                            <h3 class="title-project">Coffee shop</h3>
+                            <p>A landing page for a coffee shop.</p>
+                            <ul class="ul-project">
+                                <li><a href="coffee-landing-page/index.html" target="_blank" rel=”noreferrer”
+                                        class="project-btn">View
+                                        website</a>
+                                </li>
+                                <li>
+                                    <a href="pages/project-coffee.html" class="fas fa-info-circle fa-lg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-project" style="background-image: url('img/projects/project7.jpg');">
+                        <div class="hover-content">
+                            <h3 class="title-project">Event website</h3>
+                            <p>Americas RTE Summit event website I helped create and develop during my intership.</p>
+                            <ul class="ul-project">
+                                <li><a href="https://americas.rte-summit.com/" target="_blank" rel=”noreferrer”
+                                        class="project-btn">View
+                                        website</a>
+                                </li>
+                                <li>
+                                    <a href="pages/project-event.html" class="fas fa-info-circle fa-lg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-project" style="background-image: url('img/projects/project-weather.jpg');">
+                        <div class="hover-content">
+                            <h3 class="title-project">Weather App</h3>
+                            <p>A weather app connected to an API that shows the weather stats for all cities in the
+                                world.</p>
+                            <ul class="ul-project">
+                                <li><a href="weather-API/index.html" target="_blank" rel=”noreferrer”
+                                        class="project-btn">View
+                                        website</a>
+                                </li>
+                                <li>
+                                    <a href="pages/project-weather.html" class="fas fa-info-circle fa-lg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-project" style="background-image: url('img/projects/project-anime.jpg');">
+                        <div class="hover-content">
+                            <h3 class="title-project">Anime Top 10</h3>
+                            <p>A list of my top 10 anime as of right now.</p>
+                            <ul class="ul-project">
+                                <li><a href="AnimeTop10/index.html" target="_blank" rel=”noreferrer”
+                                        class="project-btn">View
+                                        website</a>
+                                </li>
+                                <li>
+                                    <a href="pages/project-anime.html" class="fas fa-info-circle fa-lg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="section-contact text-center" id="section-contact">
+        <div class="container">
+            <h1 class="title-section">Contact Me</h1>
+            <p class="subtitle-section">Feel free to contact me for any work related inquiries or questions you may have
+                about any of my work.
+            </p>
+
+            <div class="contact-form row">
+                <div class="box-left col-lg-6 col-md-12 col-sm-12">
+                    <div class="col-12">
+                        <label class="text-left" for="first-name-form">First Name</label>
+                        <input type="text" class="form-control" id="first-name-form">
+                    </div>
+                    <div class="col-12">
+                        <label class="text-left" for="last-name-form">Last Name</label>
+                        <input type="text" class="form-control" id="last-name-form">
+                    </div>
+                    <div class="col-12">
+                        <label class="text-left" for="email-form">Email</label>
+                        <input type="text" class="form-control" id="email-form" type="email">
+                    </div>
+                </div>
+                <div class="box-right col-lg-6 col-md-12 col-sm-12">
+                    <div class="col-12">
+                        <label class="text-left" for="message-form">Write Message</label>
+                        <textarea type="text" class="form-control" id="message-form" style="height: 205px;"></textarea>
+                    </div>
+                </div>
+                <div class="form-group mx-auto mt-3">
+                    <form action="mailto:brunofigueiredoATliveDOTnl" onclick="this.href=this.href
+                    .replace(/AT/,'&#64;')
+                    .replace(/DOT/,'&#46;')">
+                        <button class="contact-btn">
+                            send email <i class="far fa-envelope"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    AOS.init();
+</script>
+
+</html>
