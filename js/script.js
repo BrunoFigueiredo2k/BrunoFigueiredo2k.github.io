@@ -124,16 +124,17 @@ $(window).scroll(function () {
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
     document.getElementById("mySidenav").style.width = "100vw";
-    $('#main').hide(400);
     $('#mySidenav li').fadeIn(400);
     $('#mySidenav li').css('margin-left', '10px');
-    document.body.style.backgroundColor = "#2c2f33";
+    $('#hamburger-mobile').fadeOut(500);
+    $('#closeBtn').fadeIn(1000);
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    $('#main').fadeIn();
     $('#mySidenav li').fadeOut(400);
     $('#mySidenav li').css('margin-left', '-300px');
+    $('#closeBtn').fadeOut(200);
+    $('#hamburger-mobile').fadeIn(100);
 }
