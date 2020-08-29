@@ -123,9 +123,9 @@ $(window).scroll(function () {
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100vw";
-    $('#mySidenav li').fadeIn(400);
-    $('#mySidenav li').css('margin-left', '10px');
+    document.getElementById("mySidenav").style.width = "105vw";
+    $('#mySidenav li').fadeIn(600);
+    $('#mySidenav li').css('margin-left', '48px');
     $('#hamburger-mobile').fadeOut(500);
     $('#closeBtn').fadeIn(1000);
 }
