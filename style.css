@@ -459,7 +459,7 @@ hr {
 }
 
 #hamburger-mobile:hover,
-.sidenav .closebtn:hover {
+.sidenav .closebtn:hover {cursor: pointer;
     background-color: #41474d;
 }
 
