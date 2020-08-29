@@ -459,7 +459,8 @@ hr {
 }
 
 #hamburger-mobile:hover,
-.sidenav .closebtn:hover {cursor: pointer;
+.sidenav .closebtn:hover {
+    cursor: pointer;
     background-color: #41474d;
 }
 
@@ -495,7 +496,7 @@ hr {
 
 .sidenav .closebtn,
 #hamburger-mobile {
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 15px;
     font-size: 50px;
@@ -508,6 +509,7 @@ hr {
     box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.151);
     background-color: #303438;
     transition: 200ms ease;
+    z-index: 99999;
 }
 
 #hamburger-mobile {
