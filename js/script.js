@@ -126,8 +126,8 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "105vw";
     $('#mySidenav li').fadeIn(600);
     $('#mySidenav li').css('margin-left', '48px');
-    $('#hamburger-mobile').fadeOut(500);
-    $('#closeBtn').fadeIn(1000);
+    $('#hamburger-mobile').fadeOut(200);
+    $('#closeBtn').fadeIn(100);
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
