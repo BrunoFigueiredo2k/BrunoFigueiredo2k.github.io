@@ -109,45 +109,8 @@ window.onload = function headerDate() {
     // Displaying current date
     document.getElementById("header-date").innerHTML = `<p class="current-date">${dayOfWeek}, ${day}${dayStr} ${n}</p>`;
 
-    // Sidebar menu button scrolls to home div
-    document.getElementById("home-li").addEventListener("click", function () {
-        window.scrollTo(0, 0)
-    })
-
-    // Scroll down icon button
-    document.getElementById("scroll-div").addEventListener("click", function () {
-        window.scrollTo({
-            top: 755
-        });
-    })
-
-    // Sidebar menu button scrolls to search div
-    document.getElementById("search-li").addEventListener("click", function () {
-        window.scrollTo({
-            top: 755
-        });
-    })
-
-    // Learn about button scrolls to info div
-    document.getElementById("more-btn").addEventListener("click", function () {
-        window.scrollTo({
-            top: 1550
-        });
-    })
-
-    // Sidebar menu button scrolls to info div
-    document.getElementById("info-li").addEventListener("click", function () {
-        window.scrollTo({
-            top: 1550
-        });
-    })
-
 }
 
 document.getElementById("clear-input").addEventListener("click", function () {
     document.getElementById("clear-input").value = ' ';
 })
-
-// function reset() {
-//     document.getElementById("clear-input").value = '';
-// }

@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-	<link rel="shortcut icon" type="image/png" href="img/favicon-weather.png"/>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="shortcut icon" type="image/png" href="img/favicon-weather.png" />
     <title>Weather App | Worldwide Weather</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -29,23 +29,23 @@
 
     <div class="sidebar-menu">
         <div class="content-sidebar">
-            <li id="home-li"><i class="fas fa-home"></i></li>
-            <li id="search-li"><i class="fas fa-search"></i></li>
-            <li id="info-li"><i class="fas fa-info"></i></li>
+            <li id="home-li"><a href="#home" class="fas fa-home"></a></li>
+            <li id="search-li"><a href="#search-cities" class="fas fa-search"></a></li>
+            <li id="info-li"><a href="#info" class="fas fa-info"></a></li>
         </div>
     </div>
 
-    <div class="section1">
+    <div class="section1" id="home">
         <div class="section1-content">
             <h2 style="font-size: 32px;">Climate is what we expect, weather is what we get.</h2>
             <p style="font-size: 20px;">-<i> Mark Twain</i></p>
             <div class="scroll-down" id="scroll-div">
-                <i class="fas fa-chevron-down"></i>
+                <a href="#search-cities" class="fas fa-chevron-down"></a>
             </div>
         </div>
     </div>
 
-    <div class="section2">
+    <div class="section2" id="search-cities">
         <div class="section2-content">
             <h1 class="title-app">Search cities</h1>
             <i>Use this to search for any city in the world. Don't forget to check the
@@ -73,7 +73,7 @@
         </div>
     </div>
 
-    <div class="section3">
+    <div class="section3" id="info">
         <div class="section3-content row">
             <img src="img/openWeatherMap.png" class="info-img" alt="OpenWeather image">
             <div class="info-txt">
@@ -102,7 +102,8 @@
             <li><a href="https://github.com/BrunoFigueiredo2k" target="_black"><i class="fab fa-github"></i></a></li>
         </ul>
     </div>
-	<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

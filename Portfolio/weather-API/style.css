@@ -19,6 +19,10 @@ header {
     position: fixed;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .header-content {
     padding: 20px;
     font-weight: 600;
@@ -80,22 +84,23 @@ header {
 }
 
 .content-sidebar li {
+    list-style: none;
+}
+
+.content-sidebar a {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
-    list-style: none;
     width: 50px;
     margin-bottom: 10px;
     margin-left: 10px;
     height: 50px;
     line-height: 50px;
+    color: white;
     transition-duration: 250ms;
+    font-size: 18px;
 }
 
-.content-sidebar i {
-    transform: scale(1.5);
-}
-
-.content-sidebar li:hover {
+.content-sidebar a:hover {
     background-color: rgba(0, 0, 0);
     cursor: pointer;
 }
@@ -142,15 +147,14 @@ header {
     position: absolute;
 }
 
-.scroll-down i {
-    transform: scale(1.9);
+.scroll-down a {
+    font-size: 34px;
     color: whitesmoke;
     transition-duration: 300ms;
 }
 
-.scroll-down i:hover {
+.scroll-down a:hover {
     cursor: pointer;
-    transform: scale(2.3);
 }
 
 .title {
@@ -213,7 +217,7 @@ header {
     padding: 2px;
     height: 35px;
     text-align: left;
-	padding: 0 10px;
+    padding: 0 10px;
     border-radius: 10px;
 }
 
