@@ -1,3 +1,40 @@
+// Select the button
+const toggleThemeBtn = document.querySelector(".btn-toggle");
+// Select the stylesheet <link>
+const theme = document.querySelector("#theme-link");
+
+// Listen for a click on the button
+toggleThemeBtn.addEventListener("click", function() {
+  if (theme.getAttribute("href") == "light-theme.css") {
+	theme.href = "style.css";
+	
+	changeIconsTheme("dark")
+  } else {
+	theme.href = "light-theme.css";
+	
+	changeIconsTheme("light")
+  }
+});
+
+function changeIconsTheme(theme){
+	const darkThemeImgs = ['images-darkmode-tsb', 'images-darkmode-gladwell', 'images-darkmode-languages', 'images-darkmode-databases', 
+	'images-darkmode-other']
+
+	const lightThemeImgs = ['images-lightmode-tsb', 'images-lightmode-gladwell', 'images-lightmode-languages', 'images-lightmode-databases', 
+	'images-lightmode-other']
+
+	for (i = 0; i < darkThemeImgs.length; i++){
+		if (theme == "dark"){
+			// $("#" + `${darkThemeImgs}`).remove();
+			document.getElementById(`${darkThemeImgs[i]}`).style.display = 'inline-block';
+			document.getElementById(`${lightThemeImgs[i]}`).style.display = 'none';
+		} else if (theme == "light"){
+			document.getElementById(`${darkThemeImgs[i]}`).style.display = 'none';
+			document.getElementById(`${lightThemeImgs[i]}`).style.display = 'inline-block';
+		}
+	}
+}
+
 // Display project info onclick
 function displayInfoProject(listInfo, displayInfo) {
 	listInfo.forEach((element) => {

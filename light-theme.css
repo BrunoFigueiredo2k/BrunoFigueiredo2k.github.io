@@ -6,7 +6,7 @@
 }
 
 section {
-	background-color: #2c2f33;
+	background-color: #fff;
 	padding-left: 200px;
 	color: white;
 	padding-bottom: 1px;
@@ -19,7 +19,7 @@ section {
 }
 
 .section-content a {
-	color: #facb8e;
+	color: #000000;
 }
 
 h1,
@@ -30,7 +30,7 @@ p {
 
 .p {
 	line-height: 1.7em;
-	color: #ececec;
+	color: #857671;
 	font-weight: 400;
 	font-size: 22px;
 }
@@ -47,7 +47,7 @@ li {
 	width: 200px;
 	height: 100vh;
 	position: fixed;
-	background-color: #1a1a1a;
+	background-color: #f4f7f6;
 }
 
 .sidebar-nav-menu ul,
@@ -58,7 +58,7 @@ li {
 
 .sidebar-nav-menu .icon-nav,
 .sidenav .icon-nav {
-	color: #fad4a2;
+	color: #363434;
 	width: 70px;
 	font-size: 21px;
 	padding-left: 20px;
@@ -69,15 +69,15 @@ li {
 .sidenav a {
 	width: 100%;
 	display: block;
-	color: #ececec;
+	color: #363434;
 	transition: 400ms smooth;
 }
 
 .sidebar-nav-menu li:hover,
 .sidenav li:hover {
-	background-color: #333232;
+	background-color: #fff;
 	cursor: pointer;
-	border-left: 4px solid #fad4a2;
+	border-left: 4px solid #363434;
 }
 
 .logo {
@@ -89,14 +89,14 @@ li {
 	font-size: 26px;
 	line-height: 1.5em;
 	font-weight: 300;
-	color: #fad4a2;
+	color: #111;
 	padding-bottom: 0;
 }
 
 .author-sub {
 	width: 100%;
 	margin-top: 5px;
-	color: #ececec;
+	color: #5d5d5a;
 }
 
 .ul-socials {
@@ -113,7 +113,7 @@ li {
 }
 
 .ul-socials a {
-	color: #facb8e;
+	color: #363434;
 	margin: 0 15px 20px 15px;
 	text-decoration: none;
 	transition-duration: 200ms;
@@ -132,15 +132,9 @@ li {
 	color: black !important;
 	font-weight: 700;
 	display: inline-block;
-	transition: 250ms;
-	background-color: #fad4a2;
-	border-bottom: 4px solid #eeac55;
-}
-
-.cta-btn:hover {
-	cursor: pointer;
-	background-color: #facb8e;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.726);
+	transition: 250ms ease;
+	background-color: #c4cad1;
+	border-bottom: 4px solid #959da5;
 }
 
 #home-section {
@@ -152,18 +146,19 @@ li {
 	height: 200px;
 	border-radius: 50%;
 	margin: 100px 0 20px;
-	border: 3px solid #facb8e;
+	border: 3px solid #000000;
 	box-shadow: 0 0 5px 6px rgba(0, 0, 0, 0.144);
 }
 
 .home-title {
-	font-size: 42px;
+    font-size: 42px;
+    color: #959da5;
 	margin-bottom: 30px;
 	text-shadow: 2px 2px 5px 7px rgba(0, 0, 0, 0.199);
 }
 
 .home-title span{
-	color: #fad4a2;
+	color: #000000;
 }
 
 .home-msg {
@@ -185,24 +180,24 @@ li {
 .title-section {
 	width: 100%;
 	padding: 30px 0;
-	color: #facb8e;
+	color: #363434;
 	font-weight: 200;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	background-color: #1a1a1a;
+	background-color: #f4f7f6;
 	padding-left: 20px;
 }
 
 .quote-me {
-	border-left: 6px solid #facb8e;
+	border-left: 6px solid #000000;
 	font-size: 38px;
-	color: #facb8e;
+	color: #000000;
 	padding-left: 25px;
 	margin: 10px 0 40px 0;
 }
 
 .quote-me h1 {
-	color: #fad4a2;
+	color: #000000;
 	line-height: 1.4em;
 }
 
@@ -217,9 +212,9 @@ li {
 .card {
 	height: 100%;
 	margin-top: 40px;
-	background-color: #141414;
-	width: 100%;
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+	background-color:#fcfcfc;
+    width: 100%;
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 6%);
 }
 
 .projects .card {
@@ -233,9 +228,9 @@ li {
 	height: 100%;
 	padding: 20px;
 	margin-top: 40px;
-	background-color: #141414;
-	border-radius: 10px;
-	box-shadow: 2px 2px 10px black;
+	background-color: #fcfcfc;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 6%);
 }
 
 .company-logo {
@@ -251,7 +246,7 @@ li {
 
 .name-company {
 	font-weight: 600;
-	color: white !important;
+	color: #000000 !important;
 }
 
 .function-company {
@@ -259,7 +254,7 @@ li {
 	font-size: 16px;
 	color: white;
 	padding-right: 20px;
-	background-color: #333232;
+	background-color: #000000;
 	border-radius: 5px;
 	text-align: center;
 	font-weight: 600;
@@ -269,7 +264,7 @@ li {
 
 .p-card {
 	line-height: 1.7em;
-	color: #ececec;
+	color: #000000;
 	font-weight: 400;
 	font-size: 17px;
 }
@@ -278,7 +273,7 @@ li {
 	text-transform: uppercase;
 	font-weight: 300;
 	font-size: 17px;
-	color: #fad4a2;
+	color: #000000;
 	margin-bottom: 15px;
 }
 
@@ -286,7 +281,8 @@ li {
 .skills li {
 	display: inline-block;
 	margin-right: 20px;
-	font-size: 33px;
+    font-size: 33px;
+    color: #000000;
 }
 
 .used-tech img {
@@ -306,7 +302,7 @@ li {
 
 .project-title {
 	font-size: 20px;
-	color: #facb8e;
+	color: #000000;
 	padding-bottom: 5px;
 }
 
@@ -328,7 +324,7 @@ li {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: white;
+	background-color: #fcfcfc;
 	overflow: hidden;
 	margin: 0 20px;
 	height: 0;
@@ -392,12 +388,12 @@ li {
 hr {
 	height: 1px;
 	border: none;
-	background-color: #757474;
+	background-color: #959da5;
 }
 
 .active-nav {
-	background-color: #333232;
-	border-left: 4px solid #fad4a2;
+	background-color: #fff;
+	border-left: 4px solid #959da5;
 }
 
 .skills {
@@ -415,7 +411,7 @@ hr {
 }
 
 .skill-icon {
-	color: #facb8e;
+	color: #000000;
 	margin-right: 20px;
 	font-size: 22px;
 	position: relative;
@@ -425,7 +421,7 @@ hr {
 
 .skills-label {
 	font-size: 16px;
-	color: #ececec;
+	color: #000000;
 }
 
 .skills img {
@@ -444,7 +440,7 @@ hr {
 }
 
 .contact-links i {
-	background-color: #141414;
+	background-color:#ececec;
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
@@ -476,7 +472,7 @@ hr {
 	z-index: 1;
 	top: 0;
 	right: 0;
-	background-color: #111;
+	background-color: rgb(209, 209, 209);
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
@@ -490,13 +486,13 @@ hr {
 .sidenav a {
 	padding: 0;
 	text-decoration: none;
-	color: white;
+	color: #111;
 	display: block;
 	transition: 0.3s;
 }
 
 .sidenav a:hover {
-	color: #f1f1f1;
+	color: rgb(2, 2, 2);
 }
 
 .sidenav .closebtn,
@@ -640,12 +636,12 @@ hr {
 }
 
 .link:hover {
-	border-bottom: 1.2px solid #facb8e;
+	border-bottom: 1.2px solid #000000;
 }
 
 .btn-toggle{
-    background-color: #111;
-    color: #ececec;
+    background-color: #ececec;
+    color: #111;
 	padding: 10px 15px;
 	z-index: 99999;
     font-size: 16px;
@@ -655,8 +651,8 @@ hr {
 	margin: 30px;
 	font-size: 24px;
 	border-radius: 10px;
-	border: none;
-	box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.151);
+    border: none;
+	box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.212);
 }
 
 .btn-toggle:focus {
@@ -664,7 +660,6 @@ hr {
     box-shadow: none;
   }
 
-/* Hide light theme images by default */
-#images-lightmode-tsb, #images-lightmode-gladwell, #images-lightmode-languages, #images-lightmode-databases, #images-lightmode-other{
-	display: none !important;
+.date-job{
+    color: #000000;
 }

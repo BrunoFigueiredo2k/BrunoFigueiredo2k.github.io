@@ -24,7 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Importing icons from fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id="theme-link">
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <title>Bruno Figueiredo | Web Developer | Amsterdam</title>
     <meta name="author" content="Bruno Figueiredo">
@@ -34,6 +34,8 @@
 </head>
 
 <body>
+
+    <button class="btn-toggle"><i class="fas fa-adjust"></i></button>
 
     <nav class="sidebar-nav-menu">
         <div class="logo" data-aos="fade-down"><a href="#home-section">
@@ -82,8 +84,7 @@
             <img src="img/self.png" alt="Bruno Figueiredo" class="self-img" data-aos="fade-right"
                 data-aos-duration="200">
             <h4 class="home-msg" data-aos="fade-right" data-aos-duration="300">Hello, my name is Bruno Figueiredo</h4>
-            <h1 class="home-title" data-aos="fade-right" data-aos-duration="400">I'm a <span
-                    style="color: #fad4a2;">front-end
+            <h1 class="home-title" data-aos="fade-right" data-aos-duration="400">I'm a <span>front-end
                     developer</span> and student</h1>
             <a href="#about-section" class="cta-btn" data-aos="fade-right" data-aos-duration="500">Learn more</a>
             <ul class="ul-socials" data-aos="fade-right" data-aos-duration="600">
@@ -181,7 +182,7 @@
                             <li><i class="fab fa-js"></i></li>
                         </ul>
                     </div><br>
-                    <span><i>October 2020 - Now | Amsterdam</i></span>
+                    <span class="date-job"><i>October 2020 - Now | Amsterdam</i></span>
                 </div>
                 <div class="card-job" data-aos="fade-right" data-aos-duration="500">
                     <div class="head-card row">
@@ -225,12 +226,21 @@
                             <li><i class="fab fa-css3-alt"></i></li>
                             <li><i class="fab fa-js"></i></li>
                             <li><i class="fab fa-php"></i></li>
-                            <li><img src="img/icons/bootstrap-logo.png" loading="lazy" alt="Bootstrap"></li>
-                            <li><img src="img/icons/jquery.png" loading="lazy" alt="jQuery"></li>
-                            <li><img src="img/icons/sql.png" loading="lazy" alt="SQL icon"></li>
+                            <div id="images-darkmode-tsb" style="margin: 0; padding: 0; display: inline;">
+                                <li><img src="img/icons/bootstrap-logo.png" loading="lazy" alt="Bootstrap"></li>
+                                <li><img src="img/icons/jquery.png" loading="lazy" alt="jQuery"></li>
+                                <li><img src="img/icons/sql.png" loading="lazy" alt="SQL icon"></li>
+                            </div>
+
+                            <div id="images-lightmode-tsb" style="margin: 0; padding: 0; display: inline;">
+                                <li><img src="img/icons-light-theme/bootstrap-logo.png" loading="lazy" alt="Bootstrap">
+                                </li>
+                                <li><img src="img/icons-light-theme/jquery.png" loading="lazy" alt="jQuery"></li>
+                                <li><img src="img/icons-light-theme/sql.png" loading="lazy" alt="SQL icon"></li>
+                            </div>
                         </ul>
                     </div><br>
-                    <span><i>April 2020 - Now | Amsterdam</i></span>
+                    <span class="date-job"><i>April 2020 - Now | Amsterdam</i></span>
                 </div>
                 <div class="card-job" data-aos="fade-right" data-aos-duration="500">
                     <div class="head-card row">
@@ -274,10 +284,16 @@
                             <li><i class="fab fa-html5"></i></li>
                             <li><i class="fab fa-css3-alt"></i></li>
                             <li><i class="fab fa-python"></i></li>
-                            <li><img src="img/icons/mysql.png" alt="MySQL"></li>
+                            <div id="images-darkmode-gladwell" style="margin: 0; padding: 0; display: inline;">
+                                <li><img src="img/icons/mysql.png" alt="MySQL"></li>
+                            </div>
+
+                            <div id="images-lightmode-gladwell" style="margin: 0; padding: 0; display: inline;">
+                                <li><img src="img/icons-light-theme/mysql.png" alt="MySQL"></li>
+                            </div>
                         </ul>
                     </div><br>
-                    <span><i>February 2020 - June 2020 | Amsterdam, Zuidas</i></span>
+                    <span class="date-job"><i>February 2020 - June 2020 | Amsterdam, Zuidas</i></span>
                 </div>
             </div>
         </section>
@@ -620,12 +636,24 @@
                             <li><i class="fab fa-html5"></i><br><span class="skills-label">HTML5</span></li>
                             <li><i class="fab fa-css3-alt"></i><br><span class="skills-label">CSS3</span></li>
                             <li><i class="fab fa-js"></i><br><span class="skills-label">Javascript</span></li>
-                            <li><img src="img/icons/jquery.png" loading="lazy" alt="jquery"><br><span
-                                    class="skills-label">jQuery</span></li>
                             <li><i class="fab fa-python"></i><br><span class="skills-label">Python</span></li>
-                            <li><img src="img/icons/java.png" loading="lazy" alt="java"><br><span
-                                    class="skills-label">Java</span>
-                            </li>
+
+                            <div id="images-darkmode-languages" style="margin: 0; padding: 0; display: inline;">
+                                <li><img src="img/icons/jquery.png" loading="lazy" alt="jquery"><br><span
+                                        class="skills-label">jQuery</span></li>
+                                <li><img src="img/icons/java.png" loading="lazy" alt="java"><br><span
+                                        class="skills-label">Java</span>
+                                </li>
+                            </div>
+
+                            <div id="images-lightmode-languages" style="margin: 0; padding: 0; display: inline;">
+                                <li><img src="img/icons-light-theme/jquery.png" loading="lazy" alt="jquery"><br><span
+                                        class="skills-label">jQuery</span></li>
+                                <li><img src="img/icons-light-theme/java.png" loading="lazy" alt="java"><br><span
+                                        class="skills-label">Java</span>
+                                </li>
+                            </div>
+
                         </ul>
                     </div>
                 </div>
@@ -640,11 +668,21 @@
                     <hr>
                     <div class="body-card">
                         <ul class="skills">
-                            <li><img src="img/icons/sql.png" loading="lazy" alt="SQL"><br><span
-                                    class="skills-label">SQL</span></li>
-                            <li><img src="img/icons/mysql.png" loading="lazy" alt="MySQL"><br><span
-                                    class="skills-label">MySQL</span>
-                            </li>
+                            <div id="images-darkmode-databases" style="margin: 0; padding: 0; display: inline;">
+                                <li><img src="img/icons/sql.png" loading="lazy" alt="SQL"><br><span
+                                        class="skills-label">SQL</span></li>
+                                <li><img src="img/icons/mysql.png" loading="lazy" alt="MySQL"><br><span
+                                        class="skills-label">MySQL</span>
+                                </li>
+                            </div>
+
+                            <div id="images-lightmode-databases" style="margin: 0; padding: 0; display: inline;">
+                                <li><img src="img/icons-light-theme/sql.png" loading="lazy" alt="SQL"><br><span
+                                        class="skills-label">SQL</span></li>
+                                <li><img src="img/icons-light-theme/mysql.png" loading="lazy" alt="MySQL"><br><span
+                                        class="skills-label">MySQL</span>
+                                </li>
+                            </div>
                             <li><i class="fab fa-php"></i><br><span class="skills-label">PHP</span></li>
                         </ul>
                     </div>
@@ -661,17 +699,33 @@
                     <div class="body-card">
                         <ul class="skills">
                             <li><i class="fab fa-wordpress"></i><br><span class="skills-label">Wordpress</span></li>
-                            <li><img src="img/icons/photoshop.png" loading="lazy" alt="Wordpress"><br><span
-                                    class="skills-label">Photoshop</span></li>
-                            <li><img src="img/icons/scrum.png" loading="lazy" alt="Scrum"><br><span
-                                    class="skills-label">Scrum</span>
-                            </li>
+
+                            <div id="images-darkmode-other" style="margin: 0; padding: 0; display: inline;">
+                                <li><img src="img/icons/photoshop.png" loading="lazy" alt="Wordpress"><br><span
+                                        class="skills-label">Photoshop</span></li>
+                                <li><img src="img/icons/scrum.png" loading="lazy" alt="Scrum"><br><span
+                                        class="skills-label">Scrum</span>
+                                </li>
+                                <li><img src="img/icons/vscode.png" loading="lazy" alt="Visual studio code"><br><span
+                                        class="skills-label">VSCode</span></li>
+                                <li><img src="img/icons/bootstrap-logo.png" loading="lazy" alt="Bootstrap"><br><span
+                                        class="skills-label">Bootstrap</span></li>
+                            </div>
+
+                            <div id="images-lightmode-other" style="margin: 0; padding: 0; display: inline;">
+                                <li><img src="img/icons-light-theme/photoshop.png" loading="lazy"
+                                        alt="Wordpress"><br><span class="skills-label">Photoshop</span></li>
+                                <li><img src="img/icons-light-theme/scrum.png" loading="lazy" alt="Scrum"><br><span
+                                        class="skills-label">Scrum</span>
+                                </li>
+                                <li><img src="img/icons-light-theme/vscode.png" loading="lazy"
+                                        alt="Visual studio code"><br><span class="skills-label">VSCode</span></li>
+                                <li><img src="img/icons-light-theme/bootstrap-logo.png" loading="lazy"
+                                        alt="Bootstrap"><br><span class="skills-label">Bootstrap</span></li>
+                            </div>
+
                             <li><i class="fab fa-github"></i><br><span class="skills-label">Github</span></li>
-                            <li><img src="img/icons/vscode.png" loading="lazy" alt="Visual studio code"><br><span
-                                    class="skills-label">VSCode</span></li>
                             <li><i class="fab fa-android"></i><br><span class="skills-label">Android Studio</span></li>
-                            <li><img src="img/icons/bootstrap-logo.png" loading="lazy" alt="Bootstrap"><br><span
-                                    class="skills-label">Bootstrap</span></li>
                         </ul>
                     </div>
                 </div>
@@ -714,7 +768,7 @@
         <section id="contact-section">
             <h1 class="title-section">Contact 🤙</h1>
             <div class="section-content">
-                <h1 class="home-title" data-aos="fade-right" data-aos-duration="600"><span style="color: #fad4a2;">Thank
+                <h1 class="home-title" data-aos="fade-right" data-aos-duration="600"><span>Thank
                         you</span> for visiting my website!</h1>
                 <p class="p" data-aos="fade-right" data-aos-duration="600">If you want to work together or ask me a
                     question feel free to hit me up 🙂</p><br>
