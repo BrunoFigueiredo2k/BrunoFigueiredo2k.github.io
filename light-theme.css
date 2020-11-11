@@ -146,8 +146,8 @@ li {
 	height: 200px;
 	border-radius: 50%;
 	margin: 100px 0 20px;
-	border: 3px solid #000000;
-	box-shadow: 0 0 5px 6px rgba(0, 0, 0, 0.144);
+	border: 5px solid #000000;
+	padding: 3px;
 }
 
 .home-title {
@@ -162,6 +162,7 @@ li {
 }
 
 .home-msg {
+    color: #959da5;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 15px;
@@ -169,7 +170,7 @@ li {
 
 .home-msg:after {
 	content: " ";
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #959da5;
 	padding-top: 20px;
 	display: table-cell;
 	width: 200px;
