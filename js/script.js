@@ -17,10 +17,10 @@ toggleThemeBtn.addEventListener("click", function() {
 });
 
 function changeIconsTheme(theme){
-	const darkThemeImgs = ['images-darkmode-tsb', 'images-darkmode-gladwell', 'images-darkmode-languages', 'images-darkmode-databases', 
+	const darkThemeImgs = ['images-darkmode-codeerschool','images-darkmode-tsb', 'images-darkmode-gladwell', 'images-darkmode-languages', 'images-darkmode-databases', 
 	'images-darkmode-other']
 
-	const lightThemeImgs = ['images-lightmode-tsb', 'images-lightmode-gladwell', 'images-lightmode-languages', 'images-lightmode-databases', 
+	const lightThemeImgs = ['images-lightmode-codeerschool', 'images-lightmode-tsb', 'images-lightmode-gladwell', 'images-lightmode-languages', 'images-lightmode-databases', 
 	'images-lightmode-other']
 
 	for (i = 0; i < darkThemeImgs.length; i++){
