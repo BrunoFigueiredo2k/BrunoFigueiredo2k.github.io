@@ -58,7 +58,7 @@ var project2_more_info = [ $('#project-men-spa'), $('#project-men-spa-i') ];
 var project3_more_info = [ $('#project-kbcreative'), $('#project-kbcreative-i') ];
 var project4_more_info = [ $('#project-coffee'), $('#project-coffee-i') ];
 var project5_more_info = [ $('#project-rte'), $('#project-rte-i') ];
-var project6_more_info = [ $('#project-weather'), $('#project-weather-i') ];
+var project6_more_info = [ $('#project-easybank'), $('#project-easybank-i') ];
 var project7_more_info = [ $('#project-anime'), $('#project-anime-i') ];
 var project8_more_info = [ $('#project-prev-portfolio'), $('#project-prev-portfolio-i') ];
 
@@ -80,7 +80,7 @@ var reveal_array = [
 	$('#project-kbcreative-reveal'),
 	$('#project-coffee-reveal'),
 	$('#project-rte-reveal'),
-	$('#project-weather-reveal'),
+	$('#project-easybank-reveal'),
 	$('#project-anime-reveal'),
 	$('#project-prev-portfolio-reveal')
 ];
@@ -90,7 +90,7 @@ var close_array = [
 	$('#close-kbcreative'),
 	$('#close-coffee'),
 	$('#close-rte'),
-	$('#close-weather'),
+	$('#close-easybank'),
 	$('#close-anime'),
 	$('#close-prev-portfolio')
 ];
