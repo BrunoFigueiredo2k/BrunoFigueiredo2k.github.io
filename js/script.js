@@ -61,6 +61,7 @@ var project5_more_info = [ $('#project-rte'), $('#project-rte-i') ];
 var project6_more_info = [ $('#project-easybank'), $('#project-easybank-i') ];
 var project7_more_info = [ $('#project-anime'), $('#project-anime-i') ];
 var project8_more_info = [ $('#project-prev-portfolio'), $('#project-prev-portfolio-i') ];
+var project9_more_info = [ $('#project-url-api'), $('#project-url-api') ];
 
 // Array of all project arrays
 var projects_array = [
@@ -69,6 +70,7 @@ var projects_array = [
 	project3_more_info,
 	project4_more_info,
 	project5_more_info,
+	project9_more_info,
 	project6_more_info,
 	project7_more_info,
 	project8_more_info
@@ -80,6 +82,7 @@ var reveal_array = [
 	$('#project-kbcreative-reveal'),
 	$('#project-coffee-reveal'),
 	$('#project-rte-reveal'),
+	$('#project-url-api-reveal'),
 	$('#project-easybank-reveal'),
 	$('#project-anime-reveal'),
 	$('#project-prev-portfolio-reveal')
@@ -90,6 +93,7 @@ var close_array = [
 	$('#close-kbcreative'),
 	$('#close-coffee'),
 	$('#close-rte'),
+	$('#close-url-api'),
 	$('#close-easybank'),
 	$('#close-anime'),
 	$('#close-prev-portfolio')
