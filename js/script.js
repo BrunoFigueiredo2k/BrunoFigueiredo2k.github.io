@@ -25,7 +25,6 @@ function changeIconsTheme(theme){
 
 	for (i = 0; i < darkThemeImgs.length; i++){
 		if (theme == "dark"){
-			// $("#" + `${darkThemeImgs}`).remove();
 			document.getElementById(`${darkThemeImgs[i]}`).style.display = 'inline-block';
 			document.getElementById(`${lightThemeImgs[i]}`).style.display = 'none';
 		} else if (theme == "light"){
